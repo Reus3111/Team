@@ -2,9 +2,9 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/x-icon" href="/home/reus3111/Immagini/logo.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/home/reus3111/Immagini/logo.png" />
     <title>Skywarder</title>
     <script src="script.js"></script>
 
@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
 <body class="body">
@@ -21,11 +20,42 @@
             <div class="bar"></div>
         </button>
         <nav class="mobile-menu">
-            <a href="#">HOME</a>
-            <a href="#">TEAM</a>
-            <a href="#">PROJECTS</a>
-            <a href="#">DEPARTMENTS</a>
-            <a href="#">CONTACT US</a>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li>
+                    <button class="team-button">TEAM<span id="team-arrow">
+                            <i class="fa-solid fa-caret-down arrow"></i>
+                        </span>
+                    </button>
+                    <ul class="team-submenu">
+                        <li class="team-submenu" id="team22-23">
+                            <a href="https://store.inter.it/it-it/" class="team-submenu">TEAM 2022-2023</a>
+                        </li>
+                        <li class="team-submenu" id="team21-22">
+                            <a href="https://www.inter.it/it/accrediti-inter-women" class="team-submenu">TEAM
+                                2021-2022</a>
+                        </li>
+                        <li class="team-submenu" id="team20-21">
+                            <a href="https://www.inter.it/it/inter-tv/category/highlights?channel=prima-squadra&page=1"
+                                class="team-submenu">TEAM 2020-2021</a>
+                        </li>
+                        <li class="team-submenu" id="alumni">
+                            <a href="https://www.inter.it/it/inter-tv/0_pvlqvwpm" class="team-submenu">ALUMNI</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PROJECTS<span id="projects-arrow">
+                            <i class="fa-solid fa-caret-down arrow"></i>
+                        </span></a>
+                </li>
+                <li>
+                    <a href="#">DEPARTMENTS<span id="departments-arrow">
+                            <i class="fa-solid fa-caret-down arrow"></i>
+                        </span></a>
+                </li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
         </nav>
         <nav class="navigation-menu">
             <ul id="menu">
@@ -148,17 +178,13 @@
         </nav>
     </header>
     <div class="title">
-        <h1>
-            TEAM 2022/23
-        </h1>
+        <h1>TEAM 2022/23</h1>
     </div>
     <div class="lmm">
-        <h3>
-            LOGISTICS AND MEDIA
-        </h3>
+        <h3>LOGISTICS AND MEDIA</h3>
         <div class="cd">
             <div class="bigphoto">
-                <img src="https://skywarder.eu/wp-content/uploads/2022/12/CD-Marco_Del_Togno2223.webp">
+                <img src="https://skywarder.eu/wp-content/uploads/2022/12/CD-Marco_Del_Togno2223.webp" />
             </div>
             <div class="description">
                 <h1>MARCO DEL TOGNO</h1>
@@ -166,134 +192,97 @@
                 <h6 class="quote">“To infinity and beyond”</h6>
                 <button onclick="openLinkedin()" class="linkedin-button">
                     <span class="transition"></span>
-                    <h6 class="button-text"><i class="fa-brands fa-linkedin linkedin-icon"></i>LINKEDIN</h6>
+                    <h6 class="button-text">
+                        <i class="fa-brands fa-linkedin linkedin-icon"></i>LINKEDIN
+                    </h6>
                 </button>
             </div>
         </div>
     </div>
-    <div class="photos-table" >
+    <div class="photos-table">
         <div class="single-photo">
             <a href="https://www.linkedin.com/in/marcodeltogno/">
                 <img class="photo"
-                    src="https://skywarder.eu/wp-content/uploads/2022/12/IPTL-Marco_Del_Togno2223-771x1030.webp">
+                    src="https://skywarder.eu/wp-content/uploads/2022/12/IPTL-Marco_Del_Togno2223-771x1030.webp" />
                 <!-- linkedin top right animation for photos-->
-                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation "></i></span>
-                <div class="name">
-                    Marco Del Togno
-                </div>
-                <div class="role">
-                    IPTL Logistics
-                </div>
+                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation"></i></span>
+                <div class="name">Marco Del Togno</div>
+                <div class="role">IPTL Logistics</div>
             </a>
         </div>
         <div class="single-photo">
             <a href="https://www.linkedin.com/in/agar-firenzuola-629745238/">
                 <img class="photo"
-                    src="https://skywarder.eu/wp-content/uploads/2022/12/IPTL-MMC-DESIGNAgar_Firenzuola2223-773x1030.webp">
-                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation "></i></span>
-                <div class="name">
-                    Agar Firenzuola
-                </div>
-                <div class="role">
-                    IPTL Media Design
-                </div>
+                    src="https://skywarder.eu/wp-content/uploads/2022/12/IPTL-MMC-DESIGNAgar_Firenzuola2223-773x1030.webp" />
+                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation"></i></span>
+                <div class="name">Agar Firenzuola</div>
+                <div class="role">IPTL Media Design</div>
             </a>
         </div>
         <div class="single-photo">
             <a href="https://www.linkedin.com/in/asher-marco-levi-88b563239/">
                 <img class="photo"
-                    src="https://skywarder.eu/wp-content/uploads/2022/12/IPTL-Asher_Marco_Levi2223-771x1030.webp">
-                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation "></i></span>
-                <div class="name">
-                    Asher Marco Levi
-                </div>
-                <div class="role">
-                    IPTL Media Documentation
-                </div>
+                    src="https://skywarder.eu/wp-content/uploads/2022/12/IPTL-Asher_Marco_Levi2223-771x1030.webp" />
+                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation"></i></span>
+                <div class="name">Asher Marco Levi</div>
+                <div class="role">IPTL Media Documentation</div>
             </a>
         </div>
         <div class="single-photo">
             <a href="https://www.linkedin.com/in/litovchenko-nikita//">
                 <img class="photo"
-                    src="https://skywarder.eu/wp-content/uploads/2022/12/EXT-Nikita_Litovchenko2223-771x1030.webp">
-                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation "></i></span>
-                <div class="name">
-                    Nikita Litovchenko
-                </div>
-                <div class="role">
-                    Advisor
-                </div>
+                    src="https://skywarder.eu/wp-content/uploads/2022/12/EXT-Nikita_Litovchenko2223-771x1030.webp" />
+                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation"></i></span>
+                <div class="name">Nikita Litovchenko</div>
+                <div class="role">Advisor</div>
             </a>
         </div>
         <div class="single-photo">
             <a href="https://www.linkedin.com/in/alessandro-donadi//">
                 <img class="photo"
-                    src="https://skywarder.eu/wp-content/uploads/2022/12/EXT-alessandro_donadi_2223-771x1030.webp">
-                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation "></i></span>
-                <div class="name">
-                    Alessandro Donadi
-                </div>
-                <div class="role">
-                    Advisor
-                </div>
+                    src="https://skywarder.eu/wp-content/uploads/2022/12/EXT-alessandro_donadi_2223-771x1030.webp" />
+                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation"></i></span>
+                <div class="name">Alessandro Donadi</div>
+                <div class="role">Advisor</div>
             </a>
         </div>
         <div class="single-photo">
             <a href="https://www.linkedin.com/in/roberto-runkewitz//">
                 <img class="photo"
-                    src="https://skywarder.eu/wp-content/uploads/2022/12/WEB-Roberto_Runkewitz2223-771x1030.webp">
-                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation "></i></span>
-                <div class="name">
-                    Roberto Runkewitz
-                </div>
-                <div class="role">
-                    Webmaster
-                </div>
+                    src="https://skywarder.eu/wp-content/uploads/2022/12/WEB-Roberto_Runkewitz2223-771x1030.webp" />
+                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation"></i></span>
+                <div class="name">Roberto Runkewitz</div>
+                <div class="role">Webmaster</div>
             </a>
         </div>
         <div class="single-photo">
             <a href="https://www.linkedin.com/in/agnese-alfarano-0086a721b/">
                 <img class="photo"
-                    src="https://skywarder.eu/wp-content/uploads/2022/12/agnese_alfarano2223-771x1030.webp">
-                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation "></i></span>
-                <div class="name">
-                    Agnese Alfarano
-                </div>
-                <div class="role">
-                    Logistics Member
-                </div>
+                    src="https://skywarder.eu/wp-content/uploads/2022/12/agnese_alfarano2223-771x1030.webp" />
+                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation"></i></span>
+                <div class="name">Agnese Alfarano</div>
+                <div class="role">Logistics Member</div>
             </a>
         </div>
         <div class="single-photo">
             <a href="https://www.linkedin.com/in/annalisa-corradi-8bbb1b172/">
                 <img class="photo"
-                    src="https://skywarder.eu/wp-content/uploads/2022/12/annalisa_corradi2223-225x300.webp">
-                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation "></i></span>
-                <div class="name">
-                    Annalisa Corradi
-                </div>
-                <div class="role">
-                    Logistics Member
-                </div>
+                    src="https://skywarder.eu/wp-content/uploads/2022/12/annalisa_corradi2223-225x300.webp" />
+                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation"></i></span>
+                <div class="name">Annalisa Corradi</div>
+                <div class="role">Logistics Member</div>
             </a>
         </div>
         <div class="single-photo">
             <a href="https://www.linkedin.com/in/davide-paltani-99b417190//">
                 <img class="photo"
-                    src="https://skywarder.eu/wp-content/uploads/2022/12/davide_paltani2223-225x300.webp">
-                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation "></i></span>
-                <div class="name">
-                    Davide Paltani
-                </div>
-                <div class="role">
-                    Logistics Member
-                </div>
+                    src="https://skywarder.eu/wp-content/uploads/2022/12/davide_paltani2223-225x300.webp" />
+                <span class="top-right"><i class="fa-brands fa-linkedin-in linkedin-animation"></i></span>
+                <div class="name">Davide Paltani</div>
+                <div class="role">Logistics Member</div>
             </a>
         </div>
     </div>
-
-
-
 </body>
 
 </html>

@@ -5,6 +5,7 @@ body{
   background-color: #000410;
   height: 100dvh;
   font-family: "Inter", sans-serif;
+  
 }
 
 header{
@@ -386,7 +387,7 @@ nav a
     visibility: visible;
     position: fixed;
     display: block;
-    width: 6dvw;
+    width: 45px;
     cursor: pointer;
     top: 3px;
     left: 2px;
@@ -415,15 +416,80 @@ nav a
   .hamburger.is-active .bar{
     opacity: 0;
   }
+ 
   .navigation-menu{
     opacity: 0;
     width: 1dvw;
   }
+  .mobile-menu{
+    visibility: hidden;
+    position: fixed;
+  }
+  .mobile-menu.is-active{
+    visibility: visible;
+  }
+  .mobile-menu ul
+  {
+    z-index: 2;
+    background-color: black;
+    font-weight: bolder;
+    font-size: 3.5dvw;
+    float: none;
+    position: fixed;
+    top: 15dvw;
+    left: 18px;
+    list-style-type: none;
+    padding: 1%;
+    margin: 0px;
+    width: 40dvw;
+  }
+  .hamburger::after .mobile-menu{
+    visibility: visible;
+    transition: 0.6s;
+  }
+  .mobile-menu a{
+    padding-bottom: 10dvw;
+    display: block;
+  }
+  .team-button{
+    background-color: black;
+    color: white;
+    font-size: 3.5dvw;
+    font-weight: bold;
+    border: 0px;
+    padding-bottom: 10dvw;
+    display: block;
+    position: relative;
+    left: -2dvw;
+  }
+  .team-button.is-active{
+    color: #FFD92C;
+    padding-bottom: 50dvw; 
+  }
+  .team-button.is-active i{
+    color: #FFD92C;
+  }
+  .team-submenu{
+    z-index: 5;
+    opacity: 1;
+    visibility: visible;
+    background-color: black;
+  }
+  .team-submenu li{
+    margin: 12%;
+    width: 15dvw;
+  }
+  .team-submenu a{
+    width:100%
+  }
+  
   .title{
     position: relative;
     font-size: 180%;
+    z-index: -5;
   }
   .lmm h3{
+    z-index: -5;
     position: relative;
     margin-top: 66%;
     font-size: 35px;
@@ -471,6 +537,7 @@ nav a
     margin: 0px;
   }
   .photos-table{
+    z-index: -5;
     position: relative;
     left: 0%;
     display: flex;
@@ -507,13 +574,6 @@ nav a
     position: absolute;
     bottom: 0.5dvh;
     left: 0.52dvw;
-  }
-  .mobile-menu{
-    visibility: visible;
-    position: fixed;
-    left: 2dvw;
-    top: 12dvw;
-    display: flex;
   }
 }
 
