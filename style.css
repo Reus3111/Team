@@ -387,10 +387,10 @@ nav a
     visibility: visible;
     position: fixed;
     display: block;
-    width: 45px;
+    width: 10dvw;
     cursor: pointer;
-    top: 3px;
-    left: 2px;
+    top: 4dvw;
+    left: 2dvw;
     appearance: none;
     background: none;
     outline: none;
@@ -402,9 +402,9 @@ nav a
     content: '';
     display: block;
     width: 100%;
-    height: 5px;
+    height: 0.9dvw;
     background-color: #FFFFFF;
-    margin: 6px 0px;
+    margin: 1dvw 0px;
     transition: 0.4s;
   }
   .hamburger.is-active:before{
@@ -427,13 +427,14 @@ nav a
   }
   .mobile-menu.is-active{
     visibility: visible;
+    opacity: 80%;
   }
-  .mobile-menu ul
+  .mobile-menu ul:not(.team-submenu)
   {
-    z-index: 2;
+    z-index: 6;
     background-color: black;
     font-weight: bolder;
-    font-size: 3.5dvw;
+    font-size: 2.5dvw;
     float: none;
     position: fixed;
     top: 15dvw;
@@ -442,47 +443,62 @@ nav a
     padding: 1%;
     margin: 0px;
     width: 40dvw;
+    opacity: 1;
+    padding-bottom: 2dvw;
   }
   .hamburger::after .mobile-menu{
     visibility: visible;
     transition: 0.6s;
   }
-  .mobile-menu a{
-    padding-bottom: 10dvw;
+  .mobile-menu a:not(.team-submenu,.team-button){
+    padding-bottom: 7dvw;
     display: block;
   }
   .team-button{
     background-color: black;
     color: white;
-    font-size: 3.5dvw;
+    font-size: 2.5dvw;
     font-weight: bold;
     border: 0px;
-    padding-bottom: 10dvw;
+    padding-bottom: 7dvw;
     display: block;
     position: relative;
-    left: -2dvw;
+    padding-bottom: 5dvw;
   }
   .team-button.is-active{
     color: #FFD92C;
-    padding-bottom: 50dvw; 
   }
   .team-button.is-active i{
     color: #FFD92C;
   }
   .team-submenu{
-    z-index: 5;
-    opacity: 1;
-    visibility: visible;
+    position: relative;
+    z-index: 6;
     background-color: black;
+    font-size: 1.85dvw;
+    opacity: 0;
+    height: 0;
+    top: -4dvw;
+    transition: 0.5s;
+    visibility: visible;
   }
   .team-submenu li{
+    height: 25%;
     margin: 12%;
     width: 15dvw;
   }
   .team-submenu a{
-    width:100%
+    height: 100%;
+    width: 30dvw;
+    font-weight: bolder;
+    position: relative;
+    left: -5dvw;
   }
-  
+  .team-submenu.is-active{
+    transition: 0.5s;
+    height: 20dvw;
+    opacity: 1;
+  }
   .title{
     position: relative;
     font-size: 180%;
