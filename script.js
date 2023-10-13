@@ -3,9 +3,11 @@ window.onload = function(){
     const menu_button = document.querySelector('.hamburger');
     const menu=document.querySelector('.mobile-menu');
     const team_submenu=document.querySelector('.team-submenu');
+    const cross=document.querySelector('.cross');
     menu_button.addEventListener('click',function(){
         menu_button.classList.toggle("is-active");
         menu.classList.toggle("is-active");
+        cross.classList.toggle("is-active");
     })
     const team_button = document.querySelector('.team-button');
     team_button.addEventListener('click',function(){
