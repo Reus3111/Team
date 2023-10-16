@@ -433,12 +433,16 @@ nav a
   .mobile-menu{
     visibility: hidden;
     position: fixed;
+    opacity: 0%;
+    transition: 0.5s;
+    
   }
   .mobile-menu.is-active{
     visibility: visible;
     opacity: 80%;
+    transition: 0.5s;
   }
-  .mobile-menu ul:not(.team-submenu)
+  .mobile-menu ul:not(.team-submenu,.projects-submenu)
   {
     z-index: 6;
     background-color: black;
@@ -454,6 +458,7 @@ nav a
     width: 40dvw;
     opacity: 1;
     padding-bottom: 2dvw;
+    
   }
   .hamburger::after .mobile-menu{
     visibility: visible;
@@ -489,7 +494,7 @@ nav a
     height: 0;
     top: -4dvw;
     transition: 0.5s;
-    visibility: visible;
+    visibility: hidden;
   }
   .team-submenu li{
     height: 25%;
@@ -506,6 +511,35 @@ nav a
   .team-submenu.is-active{
     transition: 0.5s;
     height: 20dvw;
+    opacity: 1;
+    visibility: visible;
+  }
+  .projects-submenu{
+    position: relative;
+    z-index: 6;
+    background-color: black;
+    font-size: 1.85dvw;
+    opacity: 0;
+    height: 0;
+    top: -4dvw;
+    transition: 0.5s;
+    visibility: visible;
+  }
+  .projects-submenu li{
+    height: 12.5%;
+    margin: 12%;
+    width: 15dvw;
+  }
+  .projects-submenu a{
+    height: 100%;
+    width: 30dvw;
+    font-weight: bolder;
+    position: relative;
+    left: -5dvw;
+  }
+  .projects-submenu.is-active{
+    transition: 0.5s;
+    height: 50dvw;
     opacity: 1;
   }
   .title{
