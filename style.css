@@ -442,7 +442,7 @@ nav a
     opacity: 80%;
     transition: 0.5s;
   }
-  .mobile-menu ul:not(.team-submenu,.projects-submenu)
+  .mobile-menu ul:not(.team-submenu,.projects-submenu,.departments-submenu)
   {
     z-index: 6;
     background-color: black;
@@ -458,13 +458,12 @@ nav a
     width: 40dvw;
     opacity: 1;
     padding-bottom: 2dvw;
-    
   }
   .hamburger::after .mobile-menu{
     visibility: visible;
     transition: 0.6s;
   }
-  .mobile-menu a:not(.team-submenu,.team-button){
+  .mobile-menu a:not(.team-submenu,.team-button,.departments-submenu){
     padding-bottom: 7dvw;
     display: block;
   }
@@ -498,11 +497,11 @@ nav a
   }
   .team-submenu li{
     height: 25%;
-    margin: 12%;
+    /*margin: 12%;*/
     width: 15dvw;
   }
   .team-submenu a{
-    height: 100%;
+    height: 0.00001%;
     width: 30dvw;
     font-weight: bolder;
     position: relative;
@@ -514,33 +513,93 @@ nav a
     opacity: 1;
     visibility: visible;
   }
+  .projects{
+    height: 10dvw;
+    transition: 0.5s;
+  }
+  .projects.is-active{
+    transition: 0.5s;
+    height: 65dvw;
+  }
+  .projects-button.is-active{
+    color: #FFD92C;
+  }
+  .projects-button.is-active i{
+    color: #FFD92C;
+  }
   .projects-submenu{
     position: relative;
-    z-index: 6;
+    z-index: 50;
     background-color: black;
     font-size: 1.85dvw;
     opacity: 0;
     height: 0;
     top: -4dvw;
     transition: 0.5s;
-    visibility: visible;
+    visibility: hidden;
   }
   .projects-submenu li{
-    height: 12.5%;
+    height: 12%;
     margin: 12%;
     width: 15dvw;
   }
   .projects-submenu a{
-    height: 100%;
+    height: 0.00001%;
     width: 30dvw;
     font-weight: bolder;
     position: relative;
-    left: -5dvw;
+    left: -8dvw;
   }
   .projects-submenu.is-active{
     transition: 0.5s;
     height: 50dvw;
     opacity: 1;
+    visibility: visible;
+    padding-bottom: 3dvw;
+  }
+  .departments{
+    height: 10dvw;
+    transition: 0.5s;
+  }
+  .departments.is-active{
+    transition: 0.5s;
+    height: 65dvw;
+  }
+  .departments-button.is-active{
+    color: #FFD92C;
+  }
+  .departments-button.is-active i{
+    color: #FFD92C;
+  }
+  .departments-submenu{
+    position: relative;
+    z-index: 8;
+    background-color: black;
+    font-size: 1.85dvw;
+    opacity: 0;
+    height: 0;
+    top: -6dvw;
+    left: 6dvw;
+    transition: 0.5s;
+    visibility: hidden;
+  }
+  .departments-submenu li{
+    height: 7.7%;
+    margin: 12%;
+    width: 15dvw;
+  }
+  .departments-submenu a{
+    height: 0.00001%;
+    width: 30dvw;
+    font-weight: bolder;
+    position: relative;
+    left: -5dvw;
+  }
+  .departments-submenu.is-active{
+    transition: 0.5s;
+    height: 50dvw;
+    opacity: 1;
+    visibility: visible;
   }
   .title{
     position: relative;

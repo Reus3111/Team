@@ -4,13 +4,22 @@ window.onload = function(){
     const menu=document.querySelector('.mobile-menu');
     const team_submenu=document.querySelector('.team-submenu');
     const projects_submenu=document.querySelector('.projects-submenu');
+    const departments_submenu=document.querySelector('.departments-submenu');
     const cross=document.querySelector('.cross');
+    const projects=document.querySelector('.projects');
+    const departments=document.querySelector('.departments')
     menu_button.addEventListener('click',function(){
         menu_button.classList.toggle("is-active");
         menu.classList.toggle("is-active");
         cross.classList.toggle("is-active");
         team_submenu.classList.remove("is-active");
         team_button.classList.remove("is-active");
+        projects_button.classList.remove("is-active");
+        projects_submenu.classList.remove("is-active");
+        projects.classList.remove("is-active");
+        departments_submenu.classList.remove("is-active");
+        departments_button.classList.remove("is-active");
+        departments.classList.remove("is-active");
     })
     const team_button = document.querySelector('.team-button');
     team_button.addEventListener('click',function(){
@@ -21,6 +30,14 @@ window.onload = function(){
     projects_button.addEventListener('click',function(){
         projects_button.classList.toggle("is-active");
         projects_submenu.classList.toggle("is-active");
+        projects.classList.toggle("is-active");
+    })
+
+    const departments_button = document.querySelector('.departments-button');
+    departments_button.addEventListener('click',function(){
+        departments_submenu.classList.toggle("is-active");
+        departments_button.classList.toggle("is-active");
+        departments.classList.toggle("is-active");
     })
 
     /*const departments_button*/
@@ -29,7 +46,7 @@ window.onload = function(){
     var name = [];
 
     name[0]=["Davide Paltani","https://www.linkedin.com/in/davide-paltani-99b417190//","https://skywarder.eu/wp-content/uploads/2022/12/davide_paltani2223-225x300.webp","Logistics Member"];
-
+    
     const nuovo_div=document.createElement("div");
     nuovo_div.innerHTML=`
     <a href="`+name[0][1]+`">
